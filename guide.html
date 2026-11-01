@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PADDOCK | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar"><a class="logo" href="index.html">THE<span>PADDOCK</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="teams.html">Teams</a>
+            <a href="drivers.html">Drivers</a>
+            <a class="active" href="guide.html">F1 Guide</a>
+        </nav>
+    </header>
+    <main class="section page">
+        <p class="eyebrow">FOR NEW FANS</p>
+        <h1 class="page-title">F1 <span>101.</span></h1>
+        <p class="lead">A few terms that make watching a race easier.</p>
+        <div class="guide-grid">
+            <article class="guide-card">
+                <span>01</span>
+                <h2>QUALIFYING</h2>
+                <p>A session that decides the starting order for the Grand Prix.</p>
+            </article>
+            <article class="guide-card">
+                <span>02</span>
+                <h2>PIT STOP</h2>
+                <p>A short stop in the pit lane, usually to change tyres or make repairs.</p>
+            </article>
+            <article class="guide-card">
+                <span>03</span>
+                <h2>SAFETY CAR</h2>
+                <p>A car that leads the field at a controlled speed when the track needs to be safe.</p>
+            </article>
+            <article class="guide-card">
+                <span>04</span>
+                <h2>UNDERCUT</h2>
+                <p>A strategy where a driver pits earlier to try to gain position.</p>
+            </article>
+            <article class="guide-card">
+                <span>05</span>
+                <h2>DNF</h2>
+                <p>Did Not Finish. The driver did not complete the race.</p>
+            </article>         
+        </div>
+        <section class="quiz">
+            <p class="eyebrow">QUICK CHECK</p>
+            <h2>Mini F1 Quiz</h2>
+            <p>What does DNF mean?</p>
+            <div class="quiz-opyions">
+                <button onclick="checkQuiz(false)">Driver Near Finish</button>
+                <button onclick="checkQuiz(true)">Did Not Finish</button>
+                <button onclick="checkQuiz(false)">Driver Needs Fuel</button>
+            </div>
+            <p id="quiz-result">Choose your answer!</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <span>THE PADDOCK © 2026</span><span>MADE FOR RACE FANS.</span>
+    </footer>
+
+</body>
+</html>
